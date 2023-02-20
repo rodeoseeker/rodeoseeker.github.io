@@ -4,13 +4,13 @@
     <title>Image Gallery</title>
   </head>
   <body>
-  <div id="image-set3" style="display: block;">
-      <img src="https://www.fs.usda.gov/database/feis/plants/tree/quemue/acorns.jpg" height="250" id="image1" style="display: inline-block;">
-      <img src="https://www.fs.usda.gov/database/feis/plants/tree/quemue/acorns.jpg" height="250" id="image2" style="display: inline-block;">
-      <img src="https://www.fs.usda.gov/database/feis/plants/tree/quemue/acorns.jpg" height="250" id="image3" style="display: inline-block;">
-      <img src="http://www.californiagardens.com/images/Quercus-muehlenbergii.jpg" height="250" id="image4" style="display: inline-block;">
-      <img src="https://bplant.org/photos/u/b6ec5978ffc135b473508b125f26a562-sq-330.jpg" height="250" id="image5" style="display: inline-block;">
-      <img src="https://edis.ifas.ufl.edu/LyraEDISServlet?command=getScreenImage&oid=7738214" height="250" id="image6" style="display: inline-block;">
+  <div id="image-set4" style="display: block;">
+      <img src="https://calphotos.berkeley.edu/imgs/512x768/0000_0000/0508/0282.jpeg" height="250" id="image1" style="display: inline-block;">
+      <img src="https://www.wildaboutflowers.ca/cmsAdmin/uploads/BPN144.jpg" height="250" id="image2" style="display: inline-block;">
+      <img src="https://media.gettyimages.com/id/1145381382/photo/a-branch-of-bebb-willow-salix-bebbiana-growing-in-the-countryside-in-the-uk.jpg?s=612x612&w=gi&k=20&c=hA1U9tPEzWRaxBz68WfwiOagyyd4k63v7pIdlRDzBqk=" height="250" id="image3" style="display: inline-block;">
+      <img src="https://media.gettyimages.com/id/1145381382/photo/a-branch-of-bebb-willow-salix-bebbiana-growing-in-the-countryside-in-the-uk.jpg?s=170667a&w=gi&k=20&c=74tViAa7PVCIPdPqpKtbTqqiGW1MoMIMFmSipgP2VLI=" height="250" id="image4" style="display: inline-block;">
+      <img src="https://dendro.cnre.vt.edu/dendrology/images/Salix%20discolor/bark1.jpg" height="250" id="image5" style="display: inline-block;">
+      <img src="https://dendro.cnre.vt.edu/dendrology/images/Salix%20bebbiana/leaf1.jpg" height="250" id="image6" style="display: inline-block;">
   </div>
 <div id="caption-container" style="display: none">
   <p id="caption1" style="display: none;">Taxus brevifolia (Pacific Yew)</p>
@@ -433,12 +433,13 @@ const image_links =
 ['https://edis.ifas.ufl.edu/LyraEDISServlet?command=getScreenImage&oid=12711857', 'https://s3.amazonaws.com/eit-planttoolbox-prod/media/images/quercus_virginiana_Scott_Zona_ccbync2.0_leaves_and_nuts.jpg', 'https://cdn.shopify.com/s/files/1/0005/0315/2697/products/Live_Oak.jpg?v=1519745314', 'http://www.rnr.lsu.edu/plantid/species/liveoak/images/QUEvi42a_web.jpg', 'https://edis.ifas.ufl.edu/LyraEDISServlet?command=getScreenImage&oid=624431', 'https://buchanansplants.com/wp-content/uploads/2021/09/Southern-Live-Oak.jpg']
 ]
 ];
+const numImages = 59;
+const shuffleGroup = [23, 15, 4, 34, 13, 37, 45, 49, 19, 26, 54, 35, 0, 21, 40, 6, 33, 57, 11, 58, 9, 10, 7, 14, 50, 2, 16, 36, 55, 46, 29, 12, 48, 1, 30, 51, 39, 31, 42, 47, 20, 43, 41, 52, 24, 18, 8, 22, 5, 56, 38, 53, 25, 3, 28, 27, 32, 44, 17];
+const imageSetSize = 5
+const shuffleSet = [3, 1, 4, 0, 2];
+
 let currentImageIndex = 0;
       let currentImageSetIndex = 0;
-      const numImages = 59;
-      const imageSetSize = 5;
-      const shuffleGroup = [53, 0, 58, 25, 14, 23, 41, 50, 43, 38, 34, 18, 36, 31, 37, 42, 39, 15, 17, 16, 2, 49, 48, 12, 11, 9, 57, 29, 44, 55, 35, 3, 26, 45, 24, 5, 8, 7, 10, 40, 56, 47, 22, 32, 6, 21, 54, 1, 51, 46, 4, 33, 30, 28, 52, 20, 13, 19, 27];
-      const shuffleSet = [ 2, 0, 1, 4, 3 ];
       let imageOffset = shuffleGroup[currentImageIndex];
       let imageSetOffset = shuffleSet[currentImageSetIndex];
 
@@ -498,4 +499,5 @@ let currentImageIndex = 0;
     </script>
   </body>
 </html>
+
 
